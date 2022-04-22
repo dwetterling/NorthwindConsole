@@ -1,0 +1,64 @@
+2022-04-11 13:14:07.0980|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:14:18.5447|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:17:46.4619|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:17:58.3401|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-11 13:17:59.4607|ERROR|NorthwindConsole.Program|Value cannot be null. (Parameter 'connectionString')
+2022-04-11 13:17:59.4957|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:19:53.7925|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:19:55.6151|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-11 13:19:55.8723|ERROR|NorthwindConsole.Program|Value cannot be null. (Parameter 'connectionString')
+2022-04-11 13:19:55.8723|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:31:22.2915|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:31:23.7388|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-11 13:33:50.4132|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 13:33:50.4803|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:34:36.8719|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:34:38.0491|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-11 13:34:52.3103|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 13:34:52.3483|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:35:44.3458|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:35:45.6556|INFO|NorthwindConsole.Program|Option 2 selected
+2022-04-11 13:36:09.4988|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 13:36:09.5270|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:48:49.2853|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:48:51.4534|INFO|NorthwindConsole.Program|Option 2 selected
+2022-04-11 13:48:53.6155|ERROR|NorthwindConsole.Program|CategoryName : The CategoryName field is required.
+2022-04-11 13:48:58.5237|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 13:48:58.5607|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:49:37.9164|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:49:39.1746|INFO|NorthwindConsole.Program|Option 2 selected
+2022-04-11 13:49:40.9028|ERROR|NorthwindConsole.Program|CategoryName : YO - Enter the name!
+2022-04-11 13:49:43.0865|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 13:49:43.1233|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:53:08.2332|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:53:09.6338|INFO|NorthwindConsole.Program|Option 2 selected
+2022-04-11 13:53:19.9927|INFO|NorthwindConsole.Program|Validation passed
+2022-04-11 13:53:22.1459|ERROR|NorthwindConsole.Program|CategoryName : Name exists
+2022-04-11 13:53:51.9354|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 13:53:51.9781|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:56:35.0095|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:56:36.8013|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-11 13:56:52.0377|INFO|NorthwindConsole.Program|CategoryId 6 selected
+2022-04-11 13:57:13.2756|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 13:57:13.3125|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:58:21.2879|INFO|NorthwindConsole.Program|Program started
+2022-04-11 13:58:22.2606|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-11 13:58:26.2598|INFO|NorthwindConsole.Program|CategoryId 7 selected
+2022-04-11 13:58:36.6733|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-11 13:58:37.5331|INFO|NorthwindConsole.Program|CategoryId 9 selected
+2022-04-11 13:58:37.5877|ERROR|NorthwindConsole.Program|Object reference not set to an instance of an object.
+2022-04-11 13:58:37.6139|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 13:59:58.4783|INFO|NorthwindConsole.Program|Program started
+2022-04-11 14:00:00.6449|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-11 14:00:03.3215|INFO|NorthwindConsole.Program|CategoryId 1 selected
+2022-04-11 14:02:58.9130|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 14:02:58.9490|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 14:03:05.2504|INFO|NorthwindConsole.Program|Program started
+2022-04-11 14:03:06.2101|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-11 14:03:09.8258|INFO|NorthwindConsole.Program|CategoryId 1 selected
+2022-04-11 14:03:53.8524|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 14:03:53.8872|INFO|NorthwindConsole.Program|Program ended
+2022-04-11 14:05:10.4718|INFO|NorthwindConsole.Program|Program started
+2022-04-11 14:05:17.2753|INFO|NorthwindConsole.Program|Option 4 selected
+2022-04-11 14:05:33.0870|INFO|NorthwindConsole.Program|Option q selected
+2022-04-11 14:05:33.1282|INFO|NorthwindConsole.Program|Program ended
