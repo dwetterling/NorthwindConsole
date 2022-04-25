@@ -62,3 +62,23 @@
 2022-04-11 14:05:17.2753|INFO|NorthwindConsole.Program|Option 4 selected
 2022-04-11 14:05:33.0870|INFO|NorthwindConsole.Program|Option q selected
 2022-04-11 14:05:33.1282|INFO|NorthwindConsole.Program|Program ended
+2022-04-25 13:02:27.5692|INFO|NorthwindConsole.Program|Program started
+2022-04-25 13:02:30.6715|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-25 13:04:15.4366|INFO|NorthwindConsole.Program|Option 2 selected
+2022-04-25 13:05:11.6040|ERROR|NorthwindConsole.Program|CategoryName : YO - Enter the name!
+2022-04-25 13:05:17.4166|INFO|NorthwindConsole.Program|Option q selected
+2022-04-25 13:05:17.4734|INFO|NorthwindConsole.Program|Program ended
+2022-04-25 13:30:00.2647|INFO|NorthwindConsole.Program|Program started
+2022-04-25 13:30:02.8885|INFO|NorthwindConsole.Program|Option 5 selected
+2022-04-25 13:30:35.0012|ERROR|NorthwindConsole.Program|Input string was not in a correct format.
+2022-04-25 13:30:35.0389|INFO|NorthwindConsole.Program|Program ended
+2022-04-25 13:30:46.2742|INFO|NorthwindConsole.Program|Program started
+2022-04-25 13:30:48.7090|INFO|NorthwindConsole.Program|Option 5 selected
+2022-04-25 13:31:12.5876|ERROR|NorthwindConsole.Program|String '0' was not recognized as a valid Boolean.
+2022-04-25 13:31:12.6430|INFO|NorthwindConsole.Program|Program ended
+2022-04-25 13:31:29.6038|INFO|NorthwindConsole.Program|Program started
+2022-04-25 13:31:31.3866|INFO|NorthwindConsole.Program|Option 5 selected
+2022-04-25 13:31:51.2961|INFO|NorthwindConsole.Program|Validation passed
+2022-04-25 13:31:52.0206|INFO|NorthwindConsole.Program|Product added - "Marshmellow"
+2022-04-25 13:31:59.5539|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-25 13:32:01.3138|INFO|NorthwindConsole.Program|CategoryId 1 selected

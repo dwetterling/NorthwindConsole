@@ -26,6 +26,7 @@ namespace NorthwindConsole
                     Console.WriteLine("2) Add Category");
                     Console.WriteLine("3) Display Category and related products");
                     Console.WriteLine("4) Display all Categories and their related products");
+                    Console.WriteLine("5) Add a Product");
                     Console.WriteLine("\"q\" to quit");
                     choice = Console.ReadLine();
                     Console.Clear();
@@ -70,6 +71,8 @@ namespace NorthwindConsole
                             {
                                 logger.Info("Validation passed");
                                 // TODO: save category to db
+                                db.AddCategory(category);
+                                logger.Info("Category added - {name}", category.CategoryName);
                             }
                         }
                         if (!isValid)
@@ -112,6 +115,56 @@ namespace NorthwindConsole
                             foreach (Product p in item.Products)
                             {
                                 Console.WriteLine($"\t{p.ProductName}");
+                            }
+                        }
+                    } else if (choice == "5"){
+                        Product product = new Product();
+                        Console.WriteLine("Enter Product Name:");
+                        product.ProductName = Console.ReadLine();
+                        Console.WriteLine("Enter the Supplier ID:");
+                        product.SupplierId = Convert.ToInt32(Console.ReadLine());    
+                        Console.WriteLine("Enter the Category ID:"); 
+                        product.CategoryId = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the Quantity per unit");
+                        product.QuantityPerUnit = Console.ReadLine();
+                        Console.WriteLine("Enter the Unit price");
+                        product.UnitPrice = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the Units in stock");
+                        product.UnitsInStock = Convert.ToInt16(Console.ReadLine());  
+                        Console.WriteLine("Enter the Units on order");
+                        product.UnitsOnOrder = Convert.ToInt16(Console.ReadLine());
+                        Console.WriteLine("Enter the Reorder level");
+                        product.ReorderLevel = Convert.ToInt16(Console.ReadLine());  
+                        Console.WriteLine("Enter if  or if not Discontinued");
+                        product.Discontinued = Convert.ToBoolean(Console.ReadLine());                   
+                        ValidationContext context = new ValidationContext(product, null, null);
+                        List<ValidationResult> results = new List<ValidationResult>();
+
+                        var isValid = Validator.TryValidateObject(product, context, results, true);
+                        if (isValid)
+                        {
+                            
+                            var db = new NWConsole_48_DJWContext();
+                            // check for unique name
+                            if (db.Products.Any(c => c.ProductName == product.ProductName))
+                            {
+                                // generate validation error
+                                isValid = false;
+                                results.Add(new ValidationResult("Name exists", new string[] { "ProductName" }));
+                            }
+                            else
+                            {
+                                logger.Info("Validation passed");
+                                // TODO: save category to db
+                                db.AddProduct(product);
+                                logger.Info("Product added - {name}", product.ProductName);
+                            }
+                        }
+                        if (!isValid)
+                        {
+                            foreach (var result in results)
+                            {
+                                logger.Error($"{result.MemberNames.First()} : {result.ErrorMessage}");
                             }
                         }
                     }
