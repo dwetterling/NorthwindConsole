@@ -114,3 +114,17 @@
 2022-04-27 00:05:39.2294|INFO|NorthwindConsole.Program|Product (id: 78) updated
 2022-04-27 00:06:20.7306|INFO|NorthwindConsole.Program|Option q selected
 2022-04-27 00:06:20.7759|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 00:16:11.7349|INFO|NorthwindConsole.Program|Program started
+2022-04-27 00:16:14.2501|INFO|NorthwindConsole.Program|Option 7 selected
+2022-04-27 00:25:15.8004|ERROR|NorthwindConsole.Program|Invalid Blog Id
+2022-04-27 00:25:19.9209|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 00:25:19.9553|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 00:25:27.6833|INFO|NorthwindConsole.Program|Program started
+2022-04-27 00:25:29.5791|INFO|NorthwindConsole.Program|Option 7 selected
+2022-04-27 00:25:41.8052|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-27 00:25:43.1749|INFO|NorthwindConsole.Program|Option 7 selected
+2022-04-27 00:25:46.5971|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-27 00:25:49.3999|INFO|NorthwindConsole.Program|Option 7 selected
+2022-04-27 00:25:52.2001|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-27 00:25:53.6685|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 00:25:53.7296|INFO|NorthwindConsole.Program|Program ended

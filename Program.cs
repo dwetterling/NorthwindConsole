@@ -28,6 +28,7 @@ namespace NorthwindConsole
                     Console.WriteLine("4) Display all Categories and their related products");
                     Console.WriteLine("5) Add a Product");
                     Console.WriteLine("6) Edit a product");
+                    Console.WriteLine("7) View Products");
                     Console.WriteLine("\"q\" to quit");
                     choice = Console.ReadLine();
                     Console.Clear();
@@ -142,6 +143,25 @@ namespace NorthwindConsole
                                 logger.Info($"Product (id: {product.ProductId}) updated");
                             }
                         }
+                    } else if (choice == "7"){
+                        Console.WriteLine("How would you like to view the products?");
+                        Console.WriteLine("1) All Produts");
+                        Console.WriteLine("2) Discontinued Produts");
+                        Console.WriteLine("3) Not Discontinued Produts");
+                        
+                        string view = Console.ReadLine();
+
+                        if (view == "1"){
+                            var db = new NWConsole_48_DJWContext();
+                        var product = GetProductName(db);
+                        }else if (view == "2"){
+                            var db = new NWConsole_48_DJWContext();
+                        var product = GetDiscontinuedProducts(db);
+                        }else if (view == "3"){
+                            var db = new NWConsole_48_DJWContext();
+                        var product = GetNonDiscontinuedProducts(db);
+                        }
+                        
                     }
                     Console.WriteLine();
 
@@ -221,7 +241,67 @@ namespace NorthwindConsole
                     return product;
                 }
             }
-            logger.Error("Invalid Blog Id");
+            logger.Error("Invalid Product Id");
+            return null;
+        }
+
+        public static Product GetProductName(NWConsole_48_DJWContext db)
+        {
+            // display all blogs
+            var products = db.Products.OrderBy(b => b.ProductId);
+            foreach (Product b in products)
+            {
+                Console.WriteLine($"{b.ProductName}");
+            }
+            if (int.TryParse(Console.ReadLine(), out int ProductId))
+            {
+                Product product = db.Products.FirstOrDefault(b => b.ProductId == ProductId);
+                if (product != null)
+                {
+                    return product;
+                }
+            }
+            logger.Error("Invalid Product Id");
+            return null;
+        }
+
+        public static Product GetDiscontinuedProducts(NWConsole_48_DJWContext db)
+        {
+            // display all blogs
+            var products = db.Products.Where(b => b.Discontinued == true);
+            foreach (Product b in products)
+            {
+                Console.WriteLine($"{b.ProductName}");
+            }
+            if (int.TryParse(Console.ReadLine(), out int ProductId))
+            {
+                Product product = db.Products.FirstOrDefault(b => b.ProductId == ProductId);
+                if (product != null)
+                {
+                    return product;
+                }
+            }
+            logger.Error("Invalid Product Id");
+            return null;
+        }
+
+        public static Product GetNonDiscontinuedProducts(NWConsole_48_DJWContext db)
+        {
+            // display all blogs
+            var products = db.Products.Where(b => b.Discontinued == false);
+            foreach (Product b in products)
+            {
+                Console.WriteLine($"{b.ProductName}");
+            }
+            if (int.TryParse(Console.ReadLine(), out int ProductId))
+            {
+                Product product = db.Products.FirstOrDefault(b => b.ProductId == ProductId);
+                if (product != null)
+                {
+                    return product;
+                }
+            }
+            logger.Error("Invalid Product Id");
             return null;
         }
     }
