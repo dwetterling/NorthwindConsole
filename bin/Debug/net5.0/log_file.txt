@@ -82,3 +82,35 @@
 2022-04-25 13:31:52.0206|INFO|NorthwindConsole.Program|Product added - "Marshmellow"
 2022-04-25 13:31:59.5539|INFO|NorthwindConsole.Program|Option 3 selected
 2022-04-25 13:32:01.3138|INFO|NorthwindConsole.Program|CategoryId 1 selected
+2022-04-25 13:33:14.8772|INFO|NorthwindConsole.Program|Option q selected
+2022-04-25 13:33:14.9131|INFO|NorthwindConsole.Program|Program ended
+2022-04-26 23:39:56.8248|INFO|NorthwindConsole.Program|Program started
+2022-04-26 23:40:28.2223|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-26 23:42:43.6657|ERROR|NorthwindConsole.Program|ProductName : Name exists
+2022-04-26 23:42:43.9745|INFO|NorthwindConsole.Program|Product (id: 78) updated
+2022-04-26 23:42:53.2814|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-26 23:42:55.4029|INFO|NorthwindConsole.Program|CategoryId 1 selected
+2022-04-26 23:48:03.7862|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-26 23:48:31.0285|ERROR|NorthwindConsole.Program|ProductName : Name exists
+2022-04-26 23:48:31.1589|INFO|NorthwindConsole.Program|Product (id: 78) updated
+2022-04-26 23:50:09.9278|INFO|NorthwindConsole.Program|Option q selected
+2022-04-26 23:50:09.9679|INFO|NorthwindConsole.Program|Program ended
+2022-04-26 23:52:56.3896|INFO|NorthwindConsole.Program|Program started
+2022-04-26 23:52:58.5146|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-26 23:53:24.8274|ERROR|NorthwindConsole.Program|ProductName : Name exists
+2022-04-26 23:53:25.2208|INFO|NorthwindConsole.Program|Product (id: 78) updated
+2022-04-26 23:54:17.6465|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-26 23:54:36.1510|INFO|NorthwindConsole.Program|Validation passed
+2022-04-26 23:54:36.5257|INFO|NorthwindConsole.Program|Product added - "marshmelow"
+2022-04-26 23:54:36.5913|ERROR|NorthwindConsole.Program|The property 'Product.ProductId' is part of a key and so cannot be modified or marked as modified. To change the principal of an existing entity with an identifying foreign key, first delete the dependent and invoke 'SaveChanges', and then associate the dependent with the new principal.
+2022-04-26 23:54:36.6340|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 00:02:37.3219|INFO|NorthwindConsole.Program|Program started
+2022-04-27 00:02:39.5087|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-27 00:04:30.0408|ERROR|NorthwindConsole.Program|Input string was not in a correct format.
+2022-04-27 00:04:30.0971|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 00:05:13.9360|INFO|NorthwindConsole.Program|Program started
+2022-04-27 00:05:15.7673|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-27 00:05:38.5238|ERROR|NorthwindConsole.Program|ProductName : Name exists
+2022-04-27 00:05:39.2294|INFO|NorthwindConsole.Program|Product (id: 78) updated
+2022-04-27 00:06:20.7306|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 00:06:20.7759|INFO|NorthwindConsole.Program|Program ended

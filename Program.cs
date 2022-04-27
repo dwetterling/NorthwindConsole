@@ -27,6 +27,7 @@ namespace NorthwindConsole
                     Console.WriteLine("3) Display Category and related products");
                     Console.WriteLine("4) Display all Categories and their related products");
                     Console.WriteLine("5) Add a Product");
+                    Console.WriteLine("6) Edit a product");
                     Console.WriteLine("\"q\" to quit");
                     choice = Console.ReadLine();
                     Console.Clear();
@@ -118,7 +119,44 @@ namespace NorthwindConsole
                             }
                         }
                     } else if (choice == "5"){
-                        Product product = new Product();
+                        var db = new NWConsole_48_DJWContext();
+                        Product product = InputProduct(db);
+                        if (product != null){
+                            //blog.BlogId = BlogId;
+                            db.AddProduct(product);
+                            logger.Info("Blog added - {name}", product.ProductName);
+                        }
+                        
+                    }else if (choice == "6"){
+                        Console.WriteLine("Choose the product to edit:");
+                        var db = new NWConsole_48_DJWContext();
+                        var product = GetProduct(db);
+                        if (product != null)
+                        {
+                           // input blog
+                            Product UpdatedProduct = InputProduct(db);
+                            if (UpdatedProduct != null)
+                            {
+                                UpdatedProduct.ProductId = product.ProductId;
+                                db.EditProduct(UpdatedProduct);
+                                logger.Info($"Product (id: {product.ProductId}) updated");
+                            }
+                        }
+                    }
+                    Console.WriteLine();
+
+                } while (choice.ToLower() != "q");
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex.Message);
+            }
+
+            logger.Info("Program ended");
+        }
+        public static Product InputProduct(NWConsole_48_DJWContext db)
+        {
+            Product product = new Product();
                         Console.WriteLine("Enter Product Name:");
                         product.ProductName = Console.ReadLine();
                         Console.WriteLine("Enter the Supplier ID:");
@@ -128,7 +166,7 @@ namespace NorthwindConsole
                         Console.WriteLine("Enter the Quantity per unit");
                         product.QuantityPerUnit = Console.ReadLine();
                         Console.WriteLine("Enter the Unit price");
-                        product.UnitPrice = Convert.ToInt32(Console.ReadLine());
+                        product.UnitPrice = Convert.ToDecimal(Console.ReadLine());
                         Console.WriteLine("Enter the Units in stock");
                         product.UnitsInStock = Convert.ToInt16(Console.ReadLine());  
                         Console.WriteLine("Enter the Units on order");
@@ -144,7 +182,6 @@ namespace NorthwindConsole
                         if (isValid)
                         {
                             
-                            var db = new NWConsole_48_DJWContext();
                             // check for unique name
                             if (db.Products.Any(c => c.ProductName == product.ProductName))
                             {
@@ -166,18 +203,26 @@ namespace NorthwindConsole
                             {
                                 logger.Error($"{result.MemberNames.First()} : {result.ErrorMessage}");
                             }
-                        }
-                    }
-                    Console.WriteLine();
-
-                } while (choice.ToLower() != "q");
-            }
-            catch (Exception ex)
+                        }return product;
+        }
+        public static Product GetProduct(NWConsole_48_DJWContext db)
+        {
+            // display all blogs
+            var products = db.Products.OrderBy(b => b.ProductId);
+            foreach (Product b in products)
             {
-                logger.Error(ex.Message);
+                Console.WriteLine($"{b.ProductId}: {b.ProductName}");
             }
-
-            logger.Info("Program ended");
+            if (int.TryParse(Console.ReadLine(), out int ProductId))
+            {
+                Product product = db.Products.FirstOrDefault(b => b.ProductId == ProductId);
+                if (product != null)
+                {
+                    return product;
+                }
+            }
+            logger.Error("Invalid Blog Id");
+            return null;
         }
     }
 }
