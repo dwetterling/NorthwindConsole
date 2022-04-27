@@ -128,3 +128,52 @@
 2022-04-27 00:25:52.2001|ERROR|NorthwindConsole.Program|Invalid Product Id
 2022-04-27 00:25:53.6685|INFO|NorthwindConsole.Program|Option q selected
 2022-04-27 00:25:53.7296|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 00:48:24.9204|INFO|NorthwindConsole.Program|Program started
+2022-04-27 00:48:27.3523|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 00:49:16.8107|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 00:49:16.8550|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 00:49:24.1062|INFO|NorthwindConsole.Program|Program started
+2022-04-27 00:49:28.9760|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:04:00.1658|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-27 01:04:01.6026|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:04:01.6371|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:04:10.8430|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:04:12.7619|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:05:10.3243|INFO|NorthwindConsole.Program|Option 7 selected
+2022-04-27 01:05:18.7155|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-27 01:05:20.9232|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:06:16.3151|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:06:39.0456|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:06:49.0632|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:06:55.7743|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:06:55.8091|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:09:44.8512|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:09:49.6104|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:10:04.8694|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:10:04.8991|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:10:29.5442|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:10:38.6356|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:10:38.6800|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:10:51.5854|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:10:52.3548|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:10:52.3992|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:10:59.2046|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:11:05.1022|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:11:05.1519|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:11:22.0513|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:11:22.8494|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:11:22.8969|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:11:45.5925|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:11:46.5513|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:11:46.6018|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:15:06.4678|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:15:07.7056|INFO|NorthwindConsole.Program|Option 7 selected
+2022-04-27 01:15:09.4300|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-27 01:15:14.4535|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-27 01:15:16.0809|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:15:18.3875|INFO|NorthwindConsole.Program|product NorthwindConsole.Model.Product selected
+2022-04-27 01:16:05.2977|INFO|NorthwindConsole.Program|Option q selected
+2022-04-27 01:16:05.3259|INFO|NorthwindConsole.Program|Program ended
+2022-04-27 01:16:13.0373|INFO|NorthwindConsole.Program|Program started
+2022-04-27 01:16:14.1607|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-27 01:16:17.3124|INFO|NorthwindConsole.Program|product 78 selected
