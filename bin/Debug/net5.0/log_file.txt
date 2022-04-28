@@ -177,3 +177,71 @@
 2022-04-27 01:16:13.0373|INFO|NorthwindConsole.Program|Program started
 2022-04-27 01:16:14.1607|INFO|NorthwindConsole.Program|Option 8 selected
 2022-04-27 01:16:17.3124|INFO|NorthwindConsole.Program|product 78 selected
+2022-04-28 02:39:47.1650|INFO|NorthwindConsole.Program|Program started
+2022-04-28 02:40:00.5428|INFO|NorthwindConsole.Program|Option 7 selected
+2022-04-28 02:40:02.1221|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-28 02:40:06.5942|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-28 02:40:09.2294|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-28 02:40:11.6581|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-28 02:40:11.7267|ERROR|NorthwindConsole.Program|Object reference not set to an instance of an object.
+2022-04-28 02:40:11.7533|INFO|NorthwindConsole.Program|Program ended
+2022-04-28 02:40:23.6572|INFO|NorthwindConsole.Program|Program started
+2022-04-28 02:40:27.6477|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-28 02:40:49.9649|INFO|NorthwindConsole.Program|Validation passed
+2022-04-28 02:40:50.3391|INFO|NorthwindConsole.Program|Product added - "Hershey Bar"
+2022-04-28 02:40:50.4153|ERROR|NorthwindConsole.Program|The property 'Product.ProductId' is part of a key and so cannot be modified or marked as modified. To change the principal of an existing entity with an identifying foreign key, first delete the dependent and invoke 'SaveChanges', and then associate the dependent with the new principal.
+2022-04-28 02:40:50.4419|INFO|NorthwindConsole.Program|Program ended
+2022-04-28 02:45:26.2316|INFO|NorthwindConsole.Program|Program started
+2022-04-28 02:45:50.1949|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-28 02:59:36.9549|ERROR|NorthwindConsole.Program|Input string was not in a correct format.
+2022-04-28 02:59:36.9913|INFO|NorthwindConsole.Program|Program ended
+2022-04-28 02:59:46.5304|INFO|NorthwindConsole.Program|Program started
+2022-04-28 02:59:50.4614|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-28 02:59:57.0958|INFO|NorthwindConsole.Program|Option 5 selected
+2022-04-28 03:00:22.5467|INFO|NorthwindConsole.Program|Validation passed
+2022-04-28 03:00:23.0380|INFO|NorthwindConsole.Program|Product added - "Marshmellows"
+2022-04-28 03:00:23.1691|ERROR|NorthwindConsole.Program|An error occurred while updating the entries. See the inner exception for details.
+2022-04-28 03:00:23.1936|INFO|NorthwindConsole.Program|Program ended
+2022-04-28 03:04:38.9781|INFO|NorthwindConsole.Program|Program started
+2022-04-28 03:04:41.8549|INFO|NorthwindConsole.Program|Option 7 selected
+2022-04-28 03:04:43.1105|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-28 03:04:47.0881|ERROR|NorthwindConsole.Program|Invalid Product Id
+2022-04-28 03:04:48.8137|INFO|NorthwindConsole.Program|Option 5 selected
+2022-04-28 03:05:06.2813|ERROR|NorthwindConsole.Program|String 'ture' was not recognized as a valid Boolean.
+2022-04-28 03:05:06.3158|INFO|NorthwindConsole.Program|Program ended
+2022-04-28 03:05:15.3083|INFO|NorthwindConsole.Program|Program started
+2022-04-28 03:05:17.4836|INFO|NorthwindConsole.Program|Option 5 selected
+2022-04-28 03:05:35.5524|INFO|NorthwindConsole.Program|Validation passed
+2022-04-28 03:05:36.1141|INFO|NorthwindConsole.Program|Product added - "Hershey BAr"
+2022-04-28 03:05:54.6118|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-28 03:06:14.7608|ERROR|NorthwindConsole.Program|ProductName : Name exists
+2022-04-28 03:06:14.9142|INFO|NorthwindConsole.Program|Product (id: 79) updated
+2022-04-28 03:06:45.0089|INFO|NorthwindConsole.Program|Option q selected
+2022-04-28 03:06:45.0482|INFO|NorthwindConsole.Program|Program ended
+2022-04-28 03:10:24.6816|INFO|NorthwindConsole.Program|Program started
+2022-04-28 03:10:33.9525|INFO|NorthwindConsole.Program|Option 2 selected
+2022-04-28 03:10:52.0593|INFO|NorthwindConsole.Program|Validation passed
+2022-04-28 03:10:52.6128|INFO|NorthwindConsole.Program|Category added - "Camping"
+2022-04-28 03:10:57.3222|INFO|NorthwindConsole.Program|Option 1 selected
+2022-04-28 03:13:20.7381|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-28 03:13:50.4640|ERROR|NorthwindConsole.Program|Input string was not in a correct format.
+2022-04-28 03:13:50.5016|INFO|NorthwindConsole.Program|Program ended
+2022-04-28 03:13:57.3991|INFO|NorthwindConsole.Program|Program started
+2022-04-28 03:13:59.6994|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-28 03:14:23.8271|INFO|NorthwindConsole.Program|Validation passed
+2022-04-28 03:14:24.2124|INFO|NorthwindConsole.Program|Product (id: 78) updated
+2022-04-28 03:14:30.1161|INFO|NorthwindConsole.Program|Option 8 selected
+2022-04-28 03:14:32.2316|INFO|NorthwindConsole.Program|product 78 selected
+2022-04-28 03:14:43.7565|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-28 03:14:46.0971|INFO|NorthwindConsole.Program|CategoryId 9 selected
+2022-04-28 03:15:10.9614|INFO|NorthwindConsole.Program|Option 3 selected
+2022-04-28 03:15:12.8906|INFO|NorthwindConsole.Program|CategoryId 9 selected
+2022-04-28 03:15:22.2639|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-28 03:15:40.6731|INFO|NorthwindConsole.Program|Validation passed
+2022-04-28 03:15:40.8413|INFO|NorthwindConsole.Program|Product (id: 78) updated
+2022-04-28 03:15:48.4104|INFO|NorthwindConsole.Program|Option 6 selected
+2022-04-28 03:16:22.9380|ERROR|NorthwindConsole.Program|ProductName : Name exists
+2022-04-28 03:16:23.0869|INFO|NorthwindConsole.Program|Product (id: 79) updated
+2022-04-28 03:16:26.3830|INFO|NorthwindConsole.Program|Option 4 selected
+2022-04-28 03:17:10.6138|INFO|NorthwindConsole.Program|Option q selected
+2022-04-28 03:17:10.6522|INFO|NorthwindConsole.Program|Program ended

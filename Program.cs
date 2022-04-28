@@ -50,43 +50,15 @@ namespace NorthwindConsole
                     }
                     else if (choice == "2")
                     {
-                        Category category = new Category();
-                        Console.WriteLine("Enter Category Name:");
-                        category.CategoryName = Console.ReadLine();
-                        Console.WriteLine("Enter the Category Description:");
-                        category.Description = Console.ReadLine();
-                        ValidationContext context = new ValidationContext(category, null, null);
-                        List<ValidationResult> results = new List<ValidationResult>();
-
-                        var isValid = Validator.TryValidateObject(category, context, results, true);
-                        if (isValid)
-                        {
+                        var db = new NWConsole_48_DJWContext();
+                        Category category = InputCategory(db);
+                        if (category != null){
                             
-                            var db = new NWConsole_48_DJWContext();
-                            // check for unique name
-                            if (db.Categories.Any(c => c.CategoryName == category.CategoryName))
-                            {
-                                // generate validation error
-                                isValid = false;
-                                results.Add(new ValidationResult("Name exists", new string[] { "CategoryName" }));
-                            }
-                            else
-                            {
-                                logger.Info("Validation passed");
-                                
-                                db.AddCategory(category);
-                                logger.Info("Category added - {name}", category.CategoryName);
-                            }
-                        }
-                        if (!isValid)
-                        {
-                            foreach (var result in results)
-                            {
-                                logger.Error($"{result.MemberNames.First()} : {result.ErrorMessage}");
-                            }
-                        }
+                            db.AddCategory(category);
+                            logger.Info("Category added - {name}", category.CategoryName);
                         
-                    }  else if (choice == "3")
+                    }
+                      }  else if (choice == "3")
                     {
                         var db = new NWConsole_48_DJWContext();
                         var query = db.Categories.OrderBy(p => p.CategoryId);
@@ -197,6 +169,44 @@ namespace NorthwindConsole
 
             logger.Info("Program ended");
         }
+
+        public static Category InputCategory(NWConsole_48_DJWContext db){
+            Category category = new Category();
+                        Console.WriteLine("Enter Category Name:");
+                        category.CategoryName = Console.ReadLine();
+                        Console.WriteLine("Enter the Category Description:");
+                        category.Description = Console.ReadLine();
+                        ValidationContext context = new ValidationContext(category, null, null);
+                        List<ValidationResult> results = new List<ValidationResult>();
+
+                        var isValid = Validator.TryValidateObject(category, context, results, true);
+                        if (isValid)
+                        {
+                            
+                            
+                            // check for unique name
+                            if (db.Categories.Any(c => c.CategoryName == category.CategoryName))
+                            {
+                                // generate validation error
+                                isValid = false;
+                                results.Add(new ValidationResult("Name exists", new string[] { "CategoryName" }));
+                            }
+                            else
+                            {
+                                logger.Info("Validation passed");
+                                
+                                /* db.AddCategory(category);
+                                logger.Info("Category added - {name}", category.CategoryName); */
+                            }
+                        }
+                        if (!isValid)
+                        {
+                            foreach (var result in results)
+                            {
+                                logger.Error($"{result.MemberNames.First()} : {result.ErrorMessage}");
+                            }
+                        }return category;
+        }
         public static Product InputProduct(NWConsole_48_DJWContext db)
         {
             Product product = new Product();
@@ -218,6 +228,7 @@ namespace NorthwindConsole
                         product.ReorderLevel = Convert.ToInt16(Console.ReadLine());  
                         Console.WriteLine("Enter if  or if not Discontinued");
                         product.Discontinued = Convert.ToBoolean(Console.ReadLine());                   
+                        
                         ValidationContext context = new ValidationContext(product, null, null);
                         List<ValidationResult> results = new List<ValidationResult>();
 
@@ -236,8 +247,7 @@ namespace NorthwindConsole
                             {
                                 logger.Info("Validation passed");
                                 // TODO: save category to db
-                                db.AddProduct(product);
-                                logger.Info("Product added - {name}", product.ProductName);
+                               
                             }
                         }
                         if (!isValid)
