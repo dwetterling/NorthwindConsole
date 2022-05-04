@@ -252,3 +252,78 @@
 2022-05-03 23:25:30.7578|INFO|NorthwindConsole.Program|Option 1 selected
 2022-05-03 23:25:57.2743|INFO|NorthwindConsole.Program|Option q selected
 2022-05-03 23:25:57.3337|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 01:55:22.7133|INFO|NorthwindConsole.Program|Program started
+2022-05-04 01:55:25.5362|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 01:55:28.8729|ERROR|NorthwindConsole.Program|There is already an open DataReader associated with this Connection which must be closed first.
+2022-05-04 01:55:28.8843|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 01:56:53.8589|INFO|NorthwindConsole.Program|Program started
+2022-05-04 01:56:56.3878|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 01:57:08.2315|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 01:57:08.2611|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:11:51.9896|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:12:11.9485|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:12:11.9802|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:12:16.6434|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:12:19.9550|INFO|NorthwindConsole.Program|Option 1 selected
+2022-05-04 02:12:23.1488|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:12:23.2658|ERROR|NorthwindConsole.Program|The LINQ expression 'DbSet<Category>()
+    .OrderBy(b => b.CategoryId)
+    .ElementAt(__p_0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2022-05-04 02:12:23.2760|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:14:19.4554|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:14:23.3399|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:14:24.5621|ERROR|NorthwindConsole.Program|The LINQ expression 'DbSet<Category>()
+    .OrderBy(b => b.CategoryId)
+    .ElementAt(__p_0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2022-05-04 02:14:24.5939|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:22:00.2460|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:22:01.4090|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:23:17.1732|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:23:17.2075|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:23:21.8786|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:23:22.7148|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:24:09.7027|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:24:09.7390|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:24:14.0864|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:24:14.8277|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:26:13.0389|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:26:13.0791|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:26:17.3918|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:26:18.8784|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:26:20.2039|ERROR|NorthwindConsole.Program|There is already an open DataReader associated with this Connection which must be closed first.
+2022-05-04 02:26:20.2420|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:27:09.4424|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:27:11.2789|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:27:12.5780|ERROR|NorthwindConsole.Program|There is already an open DataReader associated with this Connection which must be closed first.
+2022-05-04 02:27:12.6087|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:27:36.9740|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:27:37.6913|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:30:39.2179|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:30:39.2573|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:30:44.5178|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:30:45.2161|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:31:55.1073|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:31:55.1374|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:35:10.5537|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:35:21.7174|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:35:21.7489|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:35:25.9307|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:35:27.1019|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:35:28.4201|ERROR|NorthwindConsole.Program|There is already an open DataReader associated with this Connection which must be closed first.
+2022-05-04 02:35:28.4450|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:38:38.6221|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:38:40.3652|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:47:44.1055|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:47:44.1446|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:47:49.6729|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:47:50.7989|INFO|NorthwindConsole.Program|Option 10 selected
+2022-05-04 02:47:52.2408|ERROR|NorthwindConsole.Program|Unable to cast object of type 'NorthwindConsole.Model.Category' to type 'System.IConvertible'.
+2022-05-04 02:47:52.2957|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:52:53.2047|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:52:55.2873|INFO|NorthwindConsole.Program|Option 8 selected
+2022-05-04 02:52:58.9034|INFO|NorthwindConsole.Program|product 79 selected
+2022-05-04 02:53:31.4859|INFO|NorthwindConsole.Program|Option q selected
+2022-05-04 02:53:31.5202|INFO|NorthwindConsole.Program|Program ended
+2022-05-04 02:53:36.4550|INFO|NorthwindConsole.Program|Program started
+2022-05-04 02:53:38.9596|INFO|NorthwindConsole.Program|Option 8 selected
+2022-05-04 02:53:42.2010|INFO|NorthwindConsole.Program|product 79 selected

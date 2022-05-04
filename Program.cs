@@ -373,7 +373,7 @@ namespace NorthwindConsole
             return null;
         }
 
-        public static Product GetProduct(NWConsole_48_DJWContext db)
+        /* public static Product GetProduct(NWConsole_48_DJWContext db)
         {
             
             var products = db.Products.OrderBy(b => b.ProductId);
@@ -393,7 +393,7 @@ namespace NorthwindConsole
             }
             logger.Error("Invalid Product Id");
             return null;
-        }
+        } */
 
     }
 }
