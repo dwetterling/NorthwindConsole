@@ -245,3 +245,10 @@
 2022-04-28 03:16:26.3830|INFO|NorthwindConsole.Program|Option 4 selected
 2022-04-28 03:17:10.6138|INFO|NorthwindConsole.Program|Option q selected
 2022-04-28 03:17:10.6522|INFO|NorthwindConsole.Program|Program ended
+2022-05-03 23:24:32.1887|INFO|NorthwindConsole.Program|Program started
+2022-05-03 23:24:35.0730|INFO|NorthwindConsole.Program|Option 9 selected
+2022-05-03 23:25:23.5039|ERROR|NorthwindConsole.Program|CategoryName : Name exists
+2022-05-03 23:25:23.8442|INFO|NorthwindConsole.Program|Category (id: 9) updated
+2022-05-03 23:25:30.7578|INFO|NorthwindConsole.Program|Option 1 selected
+2022-05-03 23:25:57.2743|INFO|NorthwindConsole.Program|Option q selected
+2022-05-03 23:25:57.3337|INFO|NorthwindConsole.Program|Program ended

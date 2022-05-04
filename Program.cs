@@ -30,6 +30,7 @@ namespace NorthwindConsole
                     Console.WriteLine("6) Edit a product");
                     Console.WriteLine("7) View Products");
                     Console.WriteLine("8) View a product details");
+                    Console.WriteLine("9) Edit a category");
                     Console.WriteLine("\"q\" to quit");
                     choice = Console.ReadLine();
                     Console.Clear();
@@ -159,6 +160,21 @@ namespace NorthwindConsole
                      Console.WriteLine($"Product discontinued: {product.Discontinued} ");                       
                             }
                     Console.WriteLine();
+                    }else if (choice == "9"){
+                        Console.WriteLine("Choose the category to edit:");
+                        var db = new NWConsole_48_DJWContext();
+                        var category = GetCategories(db);
+                        if (category != null)
+                        {
+                           
+                            Category UpdatedCategory = InputCategory(db);
+                            if (UpdatedCategory != null)
+                            {
+                                UpdatedCategory.CategoryId = category.CategoryId;
+                                db.EditCategory(UpdatedCategory);
+                                logger.Info($"Category (id: {category.CategoryId}) updated");
+                            }
+                        }
                     }
                 } while (choice.ToLower() != "q");
             }
@@ -206,6 +222,25 @@ namespace NorthwindConsole
                                 logger.Error($"{result.MemberNames.First()} : {result.ErrorMessage}");
                             }
                         }return category;
+        }
+        public static Category GetCategories(NWConsole_48_DJWContext db)
+        {
+            
+            var categories = db.Categories.OrderBy(b => b.CategoryId);
+            foreach (Category b in categories)
+            {
+                Console.WriteLine($"{b.CategoryId}: {b.CategoryName}");
+            }
+            if (int.TryParse(Console.ReadLine(), out int CategoryId))
+            {
+                Category category = db.Categories.FirstOrDefault(b => b.CategoryId == CategoryId);
+                if (category != null)
+                {
+                    return category;
+                }
+            }
+            logger.Error("Invalid Category Id");
+            return null;
         }
         public static Product InputProduct(NWConsole_48_DJWContext db)
         {
@@ -260,7 +295,7 @@ namespace NorthwindConsole
         }
         public static Product GetProducts(NWConsole_48_DJWContext db)
         {
-            // display all blogs
+            
             var products = db.Products.OrderBy(b => b.ProductId);
             foreach (Product b in products)
             {
